@@ -25,6 +25,17 @@ footer{
   margin-bottom: 100px;
 
 }
+div.dropdown-menu{
+  left: -180px;
+}
+div#login-widget{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  li{
+    display:inline-block;
+  }
+}
 
 nav{
   h5{

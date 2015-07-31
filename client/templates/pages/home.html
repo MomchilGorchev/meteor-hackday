@@ -1,14 +1,17 @@
 <template name="home">
 
-    <div class="container homepage">
-
-       {{#sortable items=allElements sortField="order"}}
-
-               {{> singleElement}}
-
-
-        {{/sortable}}
-
-    </div>
+        {{#if currentUser}}
+            <div class="container homepage">
+                {{#sortable items=allElements sortField="order"}}
+                   {{> singleElementEditable}}
+                {{/sortable}}
+            </div>
+        {{else}}
+            <div class="container homepage-user">
+                {{#each allElements}}
+                    {{> singleElement}}
+                {{/each}}
+            </div>
+        {{/if}}
 
 </template>

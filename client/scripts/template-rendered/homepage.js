@@ -19,15 +19,6 @@ Template.home.rendered = function(){
     dnd.on('dragend', function(el, container){
         $(el).removeClass('moving');
 
-        var items = $(holder).find('.element');
-
-        for (var i = 0; i < items.length; i++){
-            var current = $(items[i]);
-
-            if(current.is(el)){
-                console.log(i);
-            }
-        }
 
     });
 
