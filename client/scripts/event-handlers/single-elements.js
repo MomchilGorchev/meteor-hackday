@@ -18,6 +18,25 @@ Template.singleElement.events({
             });
         }
 
+    },
+
+    'blur .editable': function(event, template){
+
+        var current = $(event.target);
+
+        console.log(current);
+        var item = {
+            id: current.closest('.element').attr('data-item'),
+            content: current.text()
+        };
+
+        console.log(item);
+
+        Meteor.call('updateElement', item, function(err, res){
+            err ? FlashMessages.sendError('Error..!?')
+                : FlashMessages.sendSuccess('Done!');
+        });
+
     }
 
 });

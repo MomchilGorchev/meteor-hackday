@@ -1,7 +1,7 @@
 <template name="singleElement">
     <div class="element {{className}}" data-item="{{_id}}">
         <a class="remove-item"><span class="pull-right"><i class="fa fa-remove fa-2x"></i></span></a>
-        <h5 class="editable" contenteditable="true">{{_id}}</h5>
+        <h5 contenteditable="true">Order: {{order}}</h5>
         <div class="element__content editable" contenteditable="true">
             {{{content}}}
         </div>
