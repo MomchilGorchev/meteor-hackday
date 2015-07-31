@@ -7,6 +7,40 @@
   height:auto;
   color: $light-color;
 
+  &:hover{
+
+    .remove-item{
+
+      display: block;
+
+    }
+
+  }
+
+  & .remove-item{
+
+    cursor: pointer;
+    display:none;
+    color:$light-color;
+
+  }
+
+  & .editable{
+
+    &:focus{
+
+      background: black;
+
+    }
+
+  }
+
+  &.moving{
+
+    border: 1px dashed black;
+
+  }
+
   &__xl{
 
     width: 98%;

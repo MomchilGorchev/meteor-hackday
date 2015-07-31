@@ -23,4 +23,48 @@ footer{
   width: 100%;
   height:auto;
   margin-bottom: 100px;
+
+}
+
+nav{
+  h5{
+
+    text-align: center;
+
+  }
+  .controls{
+
+    text-align:center;
+
+    li{
+
+      display: inline-block;
+      margin: 0 15px;
+      border: 2px solid black;
+      border-radius:5px;
+      padding:10px;
+
+      a{
+
+        color: $main-color;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover{
+
+          text-decoration:line-through;
+
+        }
+
+      }
+
+    }
+
+  }
+}
+
+.alert{
+  position: fixed;
+  top: 3%;
+  left: 2%;
 }

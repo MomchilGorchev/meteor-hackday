@@ -1,0 +1,26 @@
+
+
+<template name="mainLayout">
+
+    {{> header}}
+
+    <nav>
+        <h5 class="text-center">Add element</h5>
+        <ul class="controls">
+            <li><a href="#" class="add-item" data-width="xl">Full-width ( XL )</a></li>
+            <li><a href="#" class="add-item" data-width="l">3/4 width ( L )</a></li>
+            <li><a href="#" class="add-item" data-width="m">Half width ( M )</a></li>
+            <li><a href="#" class="add-item" data-width="s">1/3 width ( S )</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome</h1>
+        {{> yield}}
+    </div>
+
+    {{> footer}}
+
+        {{> flashMessages}}
+
+</template>

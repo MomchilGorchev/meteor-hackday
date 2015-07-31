@@ -5,8 +5,25 @@
 
 Template.home.rendered = function(){
 
-    var container = document.querySelector('.homepage');
+    var holder = document.querySelector('.homepage');
 
-    dragula([container]);
+    var dnd = dragula([holder], {
+
+    });
+
+    dnd.on('drag', function(el, container){
+        $(el).addClass('moving');
+        $(el).find('.editable').focus();
+    });
+
+    dnd.on('dragend', function(el, container){
+        $(el).removeClass('moving');
+
+        //var items = holder.querySelectorAll('.element');
+
+        //var itemIndex = holder.indexOf(el);
+        //console.log(items);
+
+    });
 
 };
