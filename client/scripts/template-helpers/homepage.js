@@ -5,7 +5,7 @@
 Template.home.helpers({
 
     allElements: function(){
-        return Elems.find({}, {sort: {timestamp: -1}});
+        return Elems.find({}, {sort: {order: 1}});
     }
 
 });

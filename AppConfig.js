@@ -3,6 +3,8 @@
  */
 
 Elems = new Meteor.Collection('elems');
+Sortable.collections = ['elems'];
+
 
 if(Meteor.isServer){
     Meteor.publish('elems', function(){

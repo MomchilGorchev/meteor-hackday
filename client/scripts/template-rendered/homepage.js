@@ -19,10 +19,15 @@ Template.home.rendered = function(){
     dnd.on('dragend', function(el, container){
         $(el).removeClass('moving');
 
-        //var items = holder.querySelectorAll('.element');
+        var items = $(holder).find('.element');
 
-        //var itemIndex = holder.indexOf(el);
-        //console.log(items);
+        for (var i = 0; i < items.length; i++){
+            var current = $(items[i]);
+
+            if(current.is(el)){
+                console.log(i);
+            }
+        }
 
     });
 
