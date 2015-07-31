@@ -1,11 +1,14 @@
 <template name="home">
 
     <div class="container homepage">
+
        {{#sortable items=allElements sortField="order"}}
 
-            {{> singleElement}}
+               {{> singleElement}}
+
 
         {{/sortable}}
+
     </div>
 
 </template>
