@@ -2,12 +2,25 @@
   Layout specific declarations
 * * * * * * * * * * * * * * * */
 
-
 header{
-  background: silver;
+  background: $nav-color;
+  color: $light-color;
+  .logo{
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 footer{
-  background: silver;
-  height: 35px;
+  color: $light-color;
+  background: $nav-color;
+  height: 50px;
+  padding: 15px;
+}
+
+.homepage{
+  width: 100%;
+  height:auto;
+  margin-bottom: 100px;
 }

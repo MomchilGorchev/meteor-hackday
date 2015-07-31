@@ -3,3 +3,14 @@ Router.configure({
     loadingTemplate: "loading"
     //notFoundTemplate: "missing"
 });
+
+Router.map(function(){
+
+    this.route('home', {
+        path: '/',
+        waitOn: function(){
+            Meteor.subscribe('elems');
+        }
+    });
+
+});

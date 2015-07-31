@@ -1,4 +1,3 @@
-## Meteor Starter Kit
+## Simple/Sample MeteorJS App created during the Powa's hackaton 
 
-### For an easy start with MeteorJS
 

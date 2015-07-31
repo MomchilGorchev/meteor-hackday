@@ -1,0 +1,38 @@
+.col{
+
+  float:left;
+  padding:10px;
+  margin: 1%;
+  min-height:200px;
+  height:auto;
+  color: $light-color;
+
+  &__xl{
+
+    width: 98%;
+    background: #ff756b;
+
+  }
+
+  &__l{
+
+    width: 64.66%;
+    background: #707c81;
+
+  }
+
+  &__m{
+
+    width: 48%;
+    background: #25a9a7;
+
+  }
+
+  &__s{
+
+    width: 31.33%;
+    background: #98388b;
+
+  }
+
+}
